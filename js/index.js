@@ -132,19 +132,24 @@ function sections() {
         searchFirstLetter();
         document.querySelector("#searchName").value = "";
         document.querySelector("#searchFirstLetter").value = "";
+        closeNavBar()
       }
       if (section == "Categories") {
         category();
+        closeNavBar()
       }
       if (section == "Area") {
         area();
+        closeNavBar()
       }
       if (section == "Ingredients") {
         ingredients();
+        closeNavBar()
       }
       if (section == "Contact Us") {
         console.log("mnawarna walahy");
         contactUs();
+        closeNavBar()
       }
     });
   }
@@ -617,9 +622,7 @@ function getMealDetailsThroughName2(response) {
 
 $("#togglenav").click(() => {
   if ($("#nav-bar").css("left") == "0px") {
-    document.querySelector("#togglenav").classList.replace("fa-x", "fa-bars");
-    $("#nav-bar").animate({ left: "-260px" }, 500);
-    $("#sections p").css("margin-top", "50px");
+    closeNavBar()
   } else {
     $("#nav-bar").animate({ left: "0px" }, 500);
     $("#sections p").css("margin-top", "0px");
@@ -627,3 +630,8 @@ $("#togglenav").click(() => {
     document.querySelector("#togglenav").classList.replace("fa-bars", "fa-x");
   }
 });
+function closeNavBar(){
+  document.querySelector("#togglenav").classList.replace("fa-x", "fa-bars");
+    $("#nav-bar").animate({ left: "-260px" }, 500);
+    $("#sections p").css("margin-top", "50px");
+}
