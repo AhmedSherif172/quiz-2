@@ -1,0 +1,70 @@
+.search{
+    display: none;
+}
+.layer{
+    background-color: rgba(255, 255, 255, 0.651) !important;
+    top: 100% ;
+    transition: 0.5s !important;
+}
+.akla:hover .layer{
+    top: 0%;
+}
+.akla{
+    cursor: pointer;
+}
+#rows{
+    display: flex;
+}
+#details{
+    display: none;
+}
+nav h2{
+    cursor: pointer;
+}
+.caticon{
+    font-size: 50px;
+}
+.ingredientsdesc{
+    height: 100px;
+}
+.warning{
+    display: none;
+}
+#contact{
+    display: none;
+}
+#SubmitbtnClosed{
+    cursor: default;
+    border-color: #932732 !important;
+}
+#SubmitbtnOpened{
+    transition: 0.3s;
+    display: none;
+}
+#SubmitbtnOpened:hover{
+    background-color: #DC3545 !important;
+    color: white !important;
+}
+
+#nav-bar{
+    left: -260px;
+}
+
+.inside-nav{
+    width: 260px;
+    background-color: #0D0D0D;
+}
+#sections p{
+    cursor: pointer;
+    margin-top: 70px;
+    /* transition-delay: 1s; */
+    transition: 1s;
+}
+
+.outside-nav{
+    width: 60px;
+    background-color: white;
+}
+#togglenav{
+    cursor: pointer;
+}
